@@ -1,0 +1,27 @@
+source 'https://rubygems.org'
+
+ruby '2.2.1'
+
+# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem 'rails', '4.2.5'
+gem 'rails-api'
+gem 'sqlite3'
+gem 'active_model_serializers'
+# consider doorkeeper over devise
+gem 'devise'
+gem 'sass-rails', '~> 5.0'
+gem 'uglifier', '>= 1.3.0'
+gem 'coffee-rails', '~> 4.1.0'
+# gem 'pg'
+gem 'rack-cors', :require => 'rack/cors'
+
+gem 'sdoc', '~> 0.4.0', group: :doc
+
+group :development, :test do
+  gem 'rspec'
+  gem 'faker'
+  gem 'byebug'
+  gem 'pry'
+  gem 'web-console', '~> 2.0'
+  # gem 'spring'
+end
